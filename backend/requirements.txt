@@ -1,0 +1,21 @@
+# Web Framework
+fastapi==0.115.5
+uvicorn[standard]==0.32.1
+
+# Machine Learning
+tensorflow==2.18.0
+scikit-learn==1.5.2
+imbalanced-learn==0.12.4
+
+# Fuzzy Logic
+scikit-fuzzy==0.4.2
+
+# Data Processing
+pandas==2.2.3
+numpy==1.26.4
+
+# Model Serialization
+joblib==1.4.2
+
+# CORS & utilities
+python-multipart==0.0.12
