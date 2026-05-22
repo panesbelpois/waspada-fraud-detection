@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --ice: #f0f7ff;
+  --mist: #e0f0ff;
+  --frost: #c5ddf5;
+  --ocean: #0077cc;
+  --azure: #00aaff;
+  --deep: #0d3b66;
+  --safe: #00aa66;
+  --alert: #ff3300;
+
+  --ivory: var(--ice);
+  --parchment: var(--mist);
+  --linen: var(--frost);
+  --flax: #b9d3ee;
+  --wheat: #92b6da;
+
+  --bottle: var(--deep);
+  --patina: var(--ocean);
+  --verdigris: var(--azure);
+  --seafoam: #d7eef6;
+
+  --terracotta: var(--alert);
+  --adobe: #ff6a40;
+  --blush: #ffe9e4;
+  --caramel: #89b7de;
+
+  --inkwell: var(--deep);
+  --umber: #4e6b8a;
+  --khaki: #7592b0;
+
+  --aman-bg: rgba(0, 170, 102, 0.12);
+  --aman-text: var(--safe);
+  --curiga-bg: rgba(0, 119, 204, 0.1);
+  --curiga-text: var(--ocean);
+  --bahaya-bg: rgba(255, 51, 0, 0.12);
+  --bahaya-text: var(--alert);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--inkwell);
+  font-family: Inter, system-ui, sans-serif;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(0, 170, 255, 0.18),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(0, 170, 102, 0.1),
+      transparent 28%
+    ),
+    linear-gradient(180deg, var(--ice), var(--mist));
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.app-panel {
+  min-height: 100vh;
+}
+
+.page-content {
+  min-height: calc(100vh - 56px);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(0, 170, 255, 0.28);
+  outline-offset: 2px;
+}
